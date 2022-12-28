@@ -1,0 +1,32 @@
+//c program to find the maximum and minimun in an array
+#include <stdio.h>
+void main()
+{
+    int arry[10], i, n, max, min;
+    printf("Enter the size of array : ");
+    scanf("%d",&n);
+    printf("Enter the Element of array : ");
+    
+    for( i=0;i<n;i++)
+    {
+        scanf("%d",&arry[i]);
+    }
+    max=arry[0];
+    for (i=0;i<n;i++)
+    {
+        if(arry[i]>max)
+        {
+            max=arry[i];
+        }
+    }
+    min=arry[0];
+    for (i=0;i<n;i++)
+    {
+        if(arry[i]<min)
+        {
+            min=arry[i];
+        }
+    }
+    printf("The max Element is %d :\n",max);
+    printf("the min Element is %d :\n",min);
+}
